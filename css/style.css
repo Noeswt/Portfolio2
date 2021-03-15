@@ -1,0 +1,218 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Righteous', cursive, "Noto Sans JP", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.l-header-container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.l-header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  background-color: aqua;
+}
+
+.p-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.p-header__title {
+  display: block;
+}
+
+.p-header__title__txt {
+  color: #393331;
+  font-size: 24px;
+}
+
+.p-header__menu__nav {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+.p-header__menu__nav.menu-open {
+  position: absolute;
+  left: 0;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.p-header__menu__burger-btn {
+  background-color: transparent;
+  border: none;
+  outline: none !important;
+}
+
+.p-header__menu__burger-btn__bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  border-radius: 2px;
+  background-color: #393331;
+  margin-bottom: 7px;
+  -webkit-transition: all .7s;
+  transition: all .7s;
+}
+
+.p-header__menu__burger-btn__bar:last-child {
+  margin: 0;
+}
+
+.p-header__menu__burger-btn.menu-open > span:nth-child(1) {
+  -webkit-transform: translateY(9px) rotate(315deg);
+          transform: translateY(9px) rotate(315deg);
+}
+
+.p-header__menu__burger-btn.menu-open > span:nth-child(2) {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.p-header__menu__burger-btn.menu-open > span:nth-child(3) {
+  -webkit-transform: translateY(-9px) rotate(-315deg);
+          transform: translateY(-9px) rotate(-315deg);
+}
+/*# sourceMappingURL=style.css.map */
