@@ -11,6 +11,10 @@
         &__txt {
             color: $cblack;
             font-size: 24px;
+
+            @include pc {
+                font-size: 36px;
+            }
         }
     }
 
