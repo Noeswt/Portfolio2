@@ -149,6 +149,26 @@ img {
   width: 100%;
 }
 
+.c-btn-white {
+  width: 100%;
+  line-height: 60px;
+  background-color: rgba(57, 51, 49, 0);
+  color: #fff;
+  border: 2px solid #fff;
+  font-family: 'Righteous', sans-serif;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .c-btn-white {
+    width: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .c-flex {
     display: -webkit-box;
@@ -173,6 +193,50 @@ img {
 @media (min-width: 1024px) {
   .c-section-title {
     font-size: 60px;
+  }
+}
+
+.c-slide-white {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.c-slide-white::before {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.c-slide-white:hover {
+  color: #393331;
+}
+
+.c-slide-white:hover::before {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.c-slider-container {
+  width: 75vw;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .c-slider-container {
+    width: 800px;
   }
 }
 
@@ -472,7 +536,7 @@ img {
 @media (min-width: 1024px) {
   .p-profile__title {
     text-align: left;
-    margin: 0 0 80px 5vw;
+    margin-bottom: 80px;
   }
 }
 
@@ -484,7 +548,7 @@ img {
 
 @media (min-width: 1024px) {
   .p-profile__txt {
-    margin: 0 5vw;
+    margin-left: 5vw;
   }
 }
 
@@ -604,6 +668,36 @@ img {
 }
 
 .p-works__title {
+  margin-bottom: 60px;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .p-works__title {
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-works__title {
+    margin-bottom: 80px;
+  }
+}
+
+.p-works__btn {
+  display: block;
+  margin: 60px auto 0;
+}
+
+@media (min-width: 768px) {
+  .p-works__btn {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .p-works__btn {
+    margin-top: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
