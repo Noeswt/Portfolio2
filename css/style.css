@@ -396,12 +396,6 @@ img {
   line-height: 1.5;
 }
 
-@media (min-width: 1024px) {
-  .p-about {
-    font-size: 18px;
-  }
-}
-
 @media (min-width: 768px) {
   .p-about__box {
     width: 50%;

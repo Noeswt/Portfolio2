@@ -3,10 +3,6 @@
     background-color: $cblack;
     line-height: 1.5;
 
-    @include pc {
-        font-size: 18px;
-    }
-
     &__box {
         @include tab {
             width: 50%;
