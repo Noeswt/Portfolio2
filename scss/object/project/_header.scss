@@ -15,63 +15,104 @@
             @include pc {
                 font-size: 36px;
             }
+
+            &.js-color {
+                color: $csilver;
+            }
         }
     }
 
-    &__menu {
-        &__nav {
-            // いったん消しておく
-            display: block;
+    &__nav {
+        // いったん消しておく
+        display: block;
 
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($cblack, $alpha: 0.9);
+        transform: translateY(-100%);
+        transition: all 0.7s;
+        
+        &.menu-open {
             position: absolute;
-            overflow: hidden;
-            top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-color: rgba($cblack, $alpha: 0.9);
-            transform: translateY(-100%);
-            transition: all 0.7s;
-            
-            &.menu-open {
-                position: absolute;
-                left: 0;
-                transform: none;
-            }
+            transform: none;
         }
 
-        &__burger-btn {
-            background-color: transparent;
-            border: none;
-            outline: none !important;
+        &__ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
 
-            &__bar {
-                display: block;
-                width: 24px;
-                height: 2px;
-                border-radius: 2px;
-                background-color: $cblack;
-                margin-bottom: 7px;
-                transition: all .7s;
+            &__li {
+                margin-bottom: 30px;
 
-                &:last-child {
-                    margin: 0;
+                @include pc {
+                    margin-bottom: 50px;
                 }
+
+                a {
+                    color: $cwhite;
+                    font-size: 36px;
+                    transition: all 0.2s;
+
+                    @include pc {
+                        font-size: 60px;
+                    }
+
+                    &:hover {
+                        opacity: 0.6;
+                        transition: all 0.2s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__burger-btn {
+        background-color: transparent;
+        border: none;
+        outline: none !important;
+
+        &__bar {
+            display: block;
+            width: 24px;
+            height: 2px;
+            border-radius: 2px;
+            background-color: $cblack;
+            margin-bottom: 7px;
+            transition: all .7s;
+
+            &:last-child {
+                margin: 0;
+            }
+            
+            &.js-color {
+                background-color: $csilver;
             }
 
             &.menu-open {
-                & > span {
-                    &:nth-child(1) {
-                        transform: translateY(9px) rotate(315deg);
-                    }
+                background-color: $cwhite;
+            }            
+        }
 
-                    &:nth-child(2) {
-                        transform: scaleX(0);
-                    }
+        &.menu-open {
+            & > span {
+                &:nth-child(1) {
+                    transform: translateY(9px) rotate(315deg);
+                }
 
-                    &:nth-child(3) {
-                        transform: translateY(-9px) rotate(-315deg);
-                    }
+                &:nth-child(2) {
+                    transform: scaleX(0);
+                }
+
+                &:nth-child(3) {
+                    transform: translateY(-9px) rotate(-315deg);
                 }
             }
         }

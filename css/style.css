@@ -193,6 +193,14 @@ img {
   }
 }
 
+.c-fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
 @media (min-width: 768px) {
   .c-flex {
     display: -webkit-box;
@@ -693,7 +701,11 @@ img {
   }
 }
 
-.p-header__menu__nav {
+.p-header__title__txt.js-color {
+  color: #808080;
+}
+
+.p-header__nav {
   display: block;
   position: absolute;
   overflow: hidden;
@@ -708,20 +720,58 @@ img {
   transition: all 0.7s;
 }
 
-.p-header__menu__nav.menu-open {
+.p-header__nav.menu-open {
   position: absolute;
   left: 0;
   -webkit-transform: none;
           transform: none;
 }
 
-.p-header__menu__burger-btn {
+.p-header__nav__ul {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.p-header__nav__ul__li {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  .p-header__nav__ul__li {
+    margin-bottom: 50px;
+  }
+}
+
+.p-header__nav__ul__li a {
+  color: #fff;
+  font-size: 36px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+@media (min-width: 1024px) {
+  .p-header__nav__ul__li a {
+    font-size: 60px;
+  }
+}
+
+.p-header__nav__ul__li a:hover {
+  opacity: 0.6;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.p-header__burger-btn {
   background-color: transparent;
   border: none;
   outline: none !important;
 }
 
-.p-header__menu__burger-btn__bar {
+.p-header__burger-btn__bar {
   display: block;
   width: 24px;
   height: 2px;
@@ -732,21 +782,29 @@ img {
   transition: all .7s;
 }
 
-.p-header__menu__burger-btn__bar:last-child {
+.p-header__burger-btn__bar:last-child {
   margin: 0;
 }
 
-.p-header__menu__burger-btn.menu-open > span:nth-child(1) {
+.p-header__burger-btn__bar.js-color {
+  background-color: #808080;
+}
+
+.p-header__burger-btn__bar.menu-open {
+  background-color: #fff;
+}
+
+.p-header__burger-btn.menu-open > span:nth-child(1) {
   -webkit-transform: translateY(9px) rotate(315deg);
           transform: translateY(9px) rotate(315deg);
 }
 
-.p-header__menu__burger-btn.menu-open > span:nth-child(2) {
+.p-header__burger-btn.menu-open > span:nth-child(2) {
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
 }
 
-.p-header__menu__burger-btn.menu-open > span:nth-child(3) {
+.p-header__burger-btn.menu-open > span:nth-child(3) {
   -webkit-transform: translateY(-9px) rotate(-315deg);
           transform: translateY(-9px) rotate(-315deg);
 }
