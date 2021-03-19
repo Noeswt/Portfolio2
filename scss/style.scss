@@ -5,14 +5,19 @@
 
 // layout
 @import "layout/container";
+@import "layout/footer";
 @import "layout/header-container";
 @import "layout/header";
 @import "layout/main";
 
 // component
+@import "object/component/btn-black";
 @import "object/component/btn-white";
 @import "object/component/flex";
+@import "object/component/flex-center";
+@import "object/component/flex-space-between";
 @import "object/component/section_title";
+@import "object/component/slide-black";
 @import "object/component/slide-white";
 @import "object/component/slider-container";
 @import "object/component/sub-title";
@@ -20,6 +25,8 @@
 
 // project
 @import "object/project/about";
+@import "object/project/contact";
+@import "object/project/footer";
 @import "object/project/fv";
 @import "object/project/header";
 @import "object/project/profile";
