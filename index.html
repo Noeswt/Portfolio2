@@ -159,18 +159,18 @@
                     WORKS
                 </h2>
                 <div class="p-works__slider js-slider">
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
                 </div>
                 <div class="p-works__thumb js-thumb">
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="#"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
                 </div>
                 <button class="p-works__btn c-btn-white c-slide-white">Read more ></button>
             </div>

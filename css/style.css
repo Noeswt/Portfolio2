@@ -687,6 +687,8 @@ img {
 .p-header__title__txt {
   color: #393331;
   font-size: 24px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 @media (min-width: 1024px) {
