@@ -1,47 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="岩永 礼恩｜Leon Iwanaga のPortfolio">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
-    <script src="https://kit.fontawesome.com/3101a44c6b.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
-    <title>岩永礼恩｜Leon Iwanaga - Portfolio</title>
-</head>
-
-<body>
-    <header class="l-header">
-        <div class="l-header-container">
-            <div class="p-header">
-                <a href="#top" class="p-header__title">
-                    <h1 class="p-header__title__txt">Portfolio</h1>
-                </a>
-                <nav class="p-header__nav"> <!-- menu open -->
-                    <ul class="p-header__nav__ul">
-                        <li class="p-header__nav__ul__li"><a href="#sec1">ABOUT</a></li>
-                        <li class="p-header__nav__ul__li"><a href="#sec2">SERVICES</a></li>
-                        <li class="p-header__nav__ul__li"><a href="#sec3">WORKS</a></li>
-                        <li class="p-header__nav__ul__li"><a href="#sec4">CONTACT</a></li>
-                    </ul>
-                </nav>
-
-                <!-- burger-button -->
-                <button class="p-header__burger-btn js-burger-btn"> <!-- on click --> <!-- menu open -->
-                    <span class="p-header__burger-btn__bar"></span> <!-- menu open -->
-                    <span class="p-header__burger-btn__bar"></span> <!-- menu open -->
-                    <span class="p-header__burger-btn__bar"></span> <!-- menu open -->
-                </button>
-            </div>
-        </div>
-    </header>   
+<?php get_header(); ?>
 
     <!-- main -->
     <main id="top" class="l-main">
@@ -104,8 +61,10 @@
                             Skill
                         </h3>
                         <p class="p-about__box__skill">
-                            HTML / CSS / JavaScript / jQuery / Sass / FLOCSS<br>
-                            CMS（WordPress） / Adobe XD / Premire Pro<br>
+                            HTML ｜ CSS ｜ JavaScript ｜ jQuery ｜ Sass<br>
+                            CSS設計（FLOCSS）<br>
+                            CMS（WordPress） ｜ Adobe XD ｜ Premire Pro<br>
+                            Git（Sourcetree） ｜ GitHub<br>
                             etc...
                         </p>
                     </div>
@@ -159,18 +118,18 @@
                     WORKS
                 </h2>
                 <div class="p-works__slider js-slider">
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
                 </div>
                 <div class="p-works__thumb js-thumb">
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
-                    <a href="https://github.com/Noeswt"><img src="images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
+                    <a href="https://github.com/Noeswt"><img src="<?php echo get_template_directory_uri(); ?>/images/cresta_third.jpg" alt=""></a>
                 </div>
                 <button class="p-works__btn c-btn-white c-slide-white">Read more ></button>
             </div>
@@ -205,32 +164,4 @@
         </section>
     </main>
 
-    <!-- footer -->
-    <footer class="l-footer">
-        <div class="p-footer">
-            <div class="l-container">
-                <ul class="p-footer__icon c-flex-center">
-                    <li class="p-footer__icon__item">
-                        <a href="https://twitter.com/Noe20201011"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li class="p-footer__icon__item">
-                        <a href="https://www.youtube.com/channel/UCZ6CM1FrzYYsjPhCM0OPsRg"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="p-footer__icon__item">
-                        <a href="https://github.com/Noeswt"><i class="fab fa-github"></i></a>
-                    </li>
-                </ul>
-                <hr>
-                <ul class="p-footer__bottom c-flex-space-between">
-                    <li><small>&copy; 2021 Leon Iwanaga All Rights Reserved</small></li>
-                    <li><a href="#top">TOP</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slick.js"></script>
-    <script src='js/script.js'></script>
-</body>
-</html>
+<?php get_footer(); ?>
