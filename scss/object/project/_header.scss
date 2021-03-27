@@ -11,6 +11,7 @@
         &__txt {
             color: $cblack;
             font-size: 24px;
+            transition: all 0.5s;
 
             @include pc {
                 font-size: 36px;
@@ -23,9 +24,7 @@
     }
 
     &__nav {
-        // いったん消しておく
         display: block;
-
         position: absolute;
         overflow: hidden;
         top: 0;
